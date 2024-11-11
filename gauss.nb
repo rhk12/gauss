@@ -1,0 +1,178 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5856,        169]
+NotebookOptionsPosition[      5378,        147]
+NotebookOutlinePosition[      5738,        163]
+CellTagsIndexPosition[      5695,        160]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{
+    RowBox[{"Integrate", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"x", "^", "2"}], "+", "y"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", 
+        RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}], " ", "//", 
+    "HoldForm"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"intb", "=", 
+   RowBox[{"ReleaseHold", "[", "b", "]"}]}], ";", 
+  RowBox[{"intc", " ", "=", " ", 
+   RowBox[{"N", "[", "intb", "]"}]}], ";", 
+  RowBox[{
+   RowBox[{"Row", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "b", ",", "\"\< = \>\"", ",", "intb", ",", "\"\< = \>\"", ",", " ", 
+      "intc"}], "}"}], "]"}], "//", "TraditionalForm"}]}]}], "Input",
+ CellChangeTimes->{{3.699704973990065*^9, 3.6997050778636436`*^9}, {
+  3.699706633041896*^9, 3.699706645136451*^9}, {3.6997151395779037`*^9, 
+  3.699715156570613*^9}, {3.699715228042562*^9, 3.6997152283409348`*^9}, {
+  3.6997152766241913`*^9, 3.699715322122868*^9}, {3.6997154280698643`*^9, 
+  3.6997154329893436`*^9}, {3.6997185110063877`*^9, 3.699718517589447*^9}, {
+  3.6997186620683002`*^9, 3.6997186685001163`*^9}, {3.699720226034007*^9, 
+  3.699720230233655*^9}, {3.699721543071801*^9, 3.699721562456658*^9}, {
+  3.6997216067020082`*^9, 3.699721610805304*^9}, {3.6997216959344873`*^9, 
+  3.6997216985896883`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{TagBox[
+     RowBox[{
+       SubsuperscriptBox["\[Integral]", 
+        RowBox[{"-", "1"}], "1"], 
+       RowBox[{
+         SubsuperscriptBox["\[Integral]", 
+          RowBox[{"-", "1"}], "1"], 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{
+               SuperscriptBox["x", "2"], "+", "y"}], ")"}], 
+           RowBox[{"\[DifferentialD]", "x"}], 
+           RowBox[{"\[DifferentialD]", "y"}]}]}]}], HoldForm],"\" = \"",
+    FractionBox["4", "3"],"\" = \"","1.3333333333333333`"},
+   "RowDefault"], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.6997049906633472`*^9, 3.699704999383399*^9}, {
+   3.699705070804192*^9, 3.699705081545809*^9}, 3.6997066464134827`*^9, {
+   3.699715198601087*^9, 3.6997152314097843`*^9}, {3.699715288567822*^9, 
+   3.699715322653511*^9}, 3.6997154343945208`*^9, 3.6997185200914497`*^9, 
+   3.699718670032873*^9, 3.699720127040695*^9, 3.699720231283445*^9, {
+   3.699721296407381*^9, 3.699721310614962*^9}, {3.699721556332408*^9, 
+   3.699721562829639*^9}, 3.699721612714707*^9, 3.6997216990912333`*^9, 
+   3.69972289423324*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{
+    RowBox[{"Integrate", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"x", "^", "3"}], "+", 
+       RowBox[{
+        RowBox[{"x", "^", "4"}], "*", 
+        RowBox[{"y", "^", "5"}]}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", "7", ",", "19"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "2", ",", "11"}], "}"}]}], "]"}], " ", "//", 
+    "HoldForm"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"intb", "=", 
+   RowBox[{"ReleaseHold", "[", "b", "]"}]}], ";", 
+  RowBox[{"intc", " ", "=", " ", 
+   RowBox[{"N", "[", "intb", "]"}]}], ";", 
+  RowBox[{
+   RowBox[{"Row", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "b", ",", "\"\< = \>\"", ",", "intb", ",", "\"\< = \>\"", ",", " ", 
+      "intc"}], "}"}], "]"}], "//", "TraditionalForm"}]}]}], "Input",
+ CellChangeTimes->{{3.699704973990065*^9, 3.6997050778636436`*^9}, {
+  3.699706633041896*^9, 3.699706645136451*^9}, {3.6997151395779037`*^9, 
+  3.699715156570613*^9}, {3.699715228042562*^9, 3.6997152283409348`*^9}, {
+  3.6997152766241913`*^9, 3.699715322122868*^9}, {3.6997154280698643`*^9, 
+  3.6997154329893436`*^9}, {3.6997185110063877`*^9, 3.699718517589447*^9}, {
+  3.6997186620683002`*^9, 3.6997186685001163`*^9}, {3.699720226034007*^9, 
+  3.699720230233655*^9}, {3.699720837300259*^9, 3.699720860629673*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{TagBox[
+     RowBox[{
+       SubsuperscriptBox["\[Integral]", "7", "19"], 
+       RowBox[{
+         SubsuperscriptBox["\[Integral]", "2", "11"], 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{
+               SuperscriptBox["x", "3"], "+", 
+               RowBox[{
+                 SuperscriptBox["x", "4"], " ", 
+                 SuperscriptBox["y", "5"]}]}], ")"}], 
+           RowBox[{"\[DifferentialD]", "x"}], 
+           RowBox[{"\[DifferentialD]", "y"}]}]}]}], HoldForm],"\" = \"",
+    FractionBox["1259389717443", "5"],"\" = \"","2.518779434886`*^11"},
+   "RowDefault"], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.699721296591255*^9, 3.699721310820187*^9}, 
+   3.6997228944227953`*^9}]
+}, Open  ]]
+},
+WindowSize->{740, 855},
+WindowMargins->{{-2323, Automatic}, {254, Automatic}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 76, 1, 28, "Input"],
+Cell[CellGroupData[{
+Cell[658, 25, 1425, 34, 63, "Input"],
+Cell[2086, 61, 1118, 24, 60, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3241, 90, 1361, 33, 63, "Input"],
+Cell[4605, 125, 757, 19, 94, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
